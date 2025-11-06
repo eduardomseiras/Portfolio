@@ -10,51 +10,54 @@
   <body>
     <!-- MAIN -->
 
-    <main>
+    <main class="flex col">
       <!-- INTRO -->
 
-      <section id="intro">
-        <div class="container">
-          <div class="box">
+      <section class="flex" id="intro">
+        <div class="container flex col" id="intro-container">
+          <div class="box flex col" id="intro-box">
             <div class="inner">
-              <img src="img/Kaedros_Dark_animated.gif" />
+              <img src="img/Kaedros_Dark_animated.gif" id="pfp" />
             </div>
-            <div class="inner">
-              <h3>
+            <div class="inner flex col">
+              <h3 id="intro-h">
                 Hello World! Meu nome é
                 <span class="red-h">Eduardo Eiras</span> e sou
               </h3>
               <h1 class="white-h">Desenvolvedor Front-End</h1>
-              <p>
+              <p id="intro-p">
                 Transformo necessidades em aplicações reais, envolventes e
-                funcionais. Desenvolvo sistemas através da minha paixão pela
-                tecnologia, contribuindo com soluções inovadoras e eficazes para
-                desafios complexos.
+                funcionais. Desenvolvo sistemas através da <br />
+                minha paixão pela tecnologia, contribuindo com soluções
+                inovadoras e eficazes para desafios complexos.
               </p>
             </div>
-            <div class="inner">
-              <ul>
-                <li>
-                  <span><img src="assets/github-logo_02.svg" />GitHub</span>
+            <div class="inner flex">
+              <ul class="flex" id="stack-list">
+                <li class="stack flex">
+                  <img src="assets/github-logo_02.svg" />
+                  <span>GitHub</span>
                 </li>
-                <li>
-                  <span><img src="assets/html-red.svg" />HTML</span>
+                <li class="stack flex">
+                  <img src="assets/html-red.svg" />
+                  <span>HTML</span>
                 </li>
-                <li>
-                  <span><img src="assets/css-blue.svg" />CSS</span>
+                <li class="stack flex">
+                  <img src="assets/css-blue.svg" />
+                  <span>CSS</span>
                 </li>
-                <li>
-                  <span
-                    ><img src="assets/javascript-yellow.svg" />Javascript</span
-                  >
+                <li class="stack flex">
+                  <img src="assets/javascript-yellow.svg" />
+                  <span>Javascript</span>
                 </li>
-                <li>
-                  <span><img src="assets/react-blue.svg" />React</span>
+                <li class="stack flex">
+                  <img src="assets/react-blue.svg" />
+                  <span>React</span>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="box">
+          <div class="box flex" id="">
             <img src="assets/caret-double-down.svg" />
           </div>
         </div>
