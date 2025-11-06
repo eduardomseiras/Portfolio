@@ -29,6 +29,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* ANIMATIONS */
+
+@keyframes arrow_down {
+  from {
+    transform: translateY(-1em);
+  }
+
+  to {
+    transform: translateY(1em);
+  }
+}
+
 /* MINOR CHANGES */
 
 .flex {
@@ -39,30 +51,30 @@ body {
   flex-direction: column;
 }
 
-#pfp {
-  border: 3px solid var(--Red);
-  border-radius: 50%;
-  width: 6em;
+section {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-#intro-h {
-  font-size: 1.25em;
+.container {
+  justify-content: center;
 }
 
 h1 {
   color: var(--Gray100);
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 3em;
-}
-
-#intro-p {
-  color: var(--Gray300);
-  line-height: 1.5em;
-  font-size: 0.8em;
 }
 
 .red-h {
   color: var(--Red);
+}
+
+h2 {
+  color: var(--Gray100);
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .purple-h {
@@ -71,11 +83,25 @@ h1 {
 
 /* INTRO */
 
+#pfp {
+  border: 3px solid var(--Red);
+  border-radius: 50%;
+  width: 6em;
+}
+
+#intro-h,
+.red-h {
+  font-size: 1.25em;
+}
+
+#intro-p {
+  color: var(--Gray300);
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+
 #intro {
   background: url(assets/Background_Intro.png) no-repeat top center/cover;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 #intro-container {
@@ -91,7 +117,8 @@ h1 {
   gap: 5em;
 }
 
-.inner {
+.inner,
+#my-works {
   align-items: center;
   gap: 1em;
 }
@@ -107,4 +134,53 @@ h1 {
   border-radius: 1.5em;
   padding: 0.5em 0.9em;
   gap: 0.5em;
+}
+
+#arrow-down {
+  animation: arrow_down 1s alternate infinite;
+}
+
+/* PROJECTS */
+
+#projects {
+  gap: 3em;
+}
+
+#hub {
+  flex-wrap: wrap;
+  margin: 0 10%;
+  gap: 1.5em;
+}
+
+.card {
+  background-color: var(--Gray400);
+  transition: 0.2s ease-in-out;
+  border-radius: 1em;
+  flex-basis: 30%;
+  padding: 1em;
+  gap: 1em;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 3px var(--Gray400);
+  scale: 0.99;
+}
+
+.projects-link {
+  width: 100%;
+}
+
+.project-img {
+  border-radius: 1em;
+  width: 100%;
+}
+
+.projects-title {
+  color: var(--Gray100);
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.card-info {
+  gap: 1em;
 }
