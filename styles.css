@@ -1,0 +1,28 @@
+/* FILES */
+@import url(reset.css);
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* COLORS */
+  --Red: #e3646e;
+  --Purple: #bb72e9;
+  --Blue: #3996db;
+  --Green: #82bc4f;
+  --Yellow: #eabd5f;
+
+  /* SHADES */
+  --White: #ffffff;
+  --Gray100: #e2e4e9;
+  --Gray200: #c0c4ce;
+  --Gray300: #878ea1;
+  --Gray400: #292c34;
+  --Gray500: #16181d;
+  --Gray600: #0d0e11;
+  --Black: #000000;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
