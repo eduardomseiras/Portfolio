@@ -24,5 +24,15 @@
 }
 
 body {
+  color: var(--Gray300);
+  background-color: var(--Gray500);
   font-family: "Inter", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
 }
