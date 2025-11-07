@@ -59,6 +59,7 @@ section {
 
 .container {
   justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -118,7 +119,8 @@ h2 {
 }
 
 .inner,
-#my-works {
+#my-works,
+#my-services {
   align-items: center;
   gap: 1em;
 }
@@ -143,10 +145,12 @@ h2 {
 /* PROJECTS */
 
 #projects {
+  margin: 10em 0;
   gap: 3em;
 }
 
-#hub {
+#hub,
+#features {
   flex-wrap: wrap;
   margin: 0 10%;
   gap: 1.5em;
@@ -161,11 +165,6 @@ h2 {
   gap: 1em;
 }
 
-.card:hover {
-  box-shadow: 0px 0px 3px var(--Gray400);
-  scale: 0.99;
-}
-
 .projects-link {
   width: 100%;
 }
@@ -175,12 +174,42 @@ h2 {
   width: 100%;
 }
 
-.projects-title {
+.title {
   color: var(--Gray100);
   font-weight: bold;
   font-size: 1.25em;
 }
 
 .card-info {
+  gap: 1em;
+}
+
+/* SERVICES */
+
+#services {
+  background-color: var(--Gray600);
+  height: 60vh;
+  gap: 5em;
+}
+
+.wrapper {
+  border: solid var(--Gray500);
+  transition: 0.25s ease-in-out;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.wrapper:hover {
+  transform: translateY(-1em);
+}
+
+.services-icons {
+  justify-content: flex-start;
+  align-items: baseline;
+  height: 4em;
+}
+
+.services-text {
+  text-align: left;
   gap: 1em;
 }
