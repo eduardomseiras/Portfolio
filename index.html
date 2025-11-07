@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- MAIN -->
-
     <main class="flex col">
-      <!-- INTRO -->
-
-      <section class="flex" id="intro">
-        <div class="container flex col" id="intro-container">
-          <div class="box flex col" id="intro-box">
-            <div class="inner">
-              <img src="img/Kaedros_Dark_animated.gif" id="pfp" />
+      <!-- HERO -->
+      <section id="hero" class="flex">
+        <div class="site-container flex col hero-container">
+          <div class="hero-card panel flex col">
+            <div class="group">
+              <img
+                src="img/Kaedros_Dark_animated.gif"
+                alt="Avatar"
+                class="avatar"
+              />
             </div>
-            <div class="inner flex col">
-              <h3 id="intro-h">
+
+            <div class="group flex col">
+              <h3 id="hero-subtitle">
                 Hello World! Meu nome é
-                <span class="red-h">Eduardo Eiras</span> e sou
+                <span class="accent-red">Eduardo Eiras</span> e sou
               </h3>
-              <h1 class="white-h">Desenvolvedor Front-End</h1>
-              <p id="intro-p">
+              <h1 class="title">Desenvolvedor Front-End</h1>
+              <p class="hero-desc">
                 Transformo necessidades em aplicações reais, envolventes e
-                funcionais. Desenvolvo sistemas através da <br />
+                funcionais. Desenvolvo interfaces através da <br />
                 minha paixão pela tecnologia, contribuindo com soluções
                 inovadoras e eficazes para desafios complexos.
               </p>
             </div>
-            <div class="inner flex">
-              <ul class="flex" id="stack-list">
-                <li class="stack flex">
-                  <img src="assets/github-logo_02.svg" />
+
+            <div class="group flex">
+              <ul class="stack-list" aria-label="Stack">
+                <li class="stack-item">
+                  <img src="assets/github-logo_02.svg" alt="" />
                   <span>GitHub</span>
                 </li>
-                <li class="stack flex">
-                  <img src="assets/html-red.svg" />
+                <li class="stack-item">
+                  <img src="assets/html-red.svg" alt="" />
                   <span>HTML</span>
                 </li>
-                <li class="stack flex">
-                  <img src="assets/css-blue.svg" />
+                <li class="stack-item">
+                  <img src="assets/css-blue.svg" alt="" />
                   <span>CSS</span>
                 </li>
-                <li class="stack flex">
-                  <img src="assets/javascript-yellow.svg" />
-                  <span>Javascript</span>
+                <li class="stack-item">
+                  <img src="assets/javascript-yellow.svg" alt="" />
+                  <span>JavaScript</span>
                 </li>
-                <li class="stack flex">
-                  <img src="assets/react-blue.svg" />
+                <li class="stack-item">
+                  <img src="assets/react-blue.svg" alt="" />
                   <span>React</span>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="box flex" id="">
-            <img src="assets/caret-double-down.svg" id="arrow-down" />
+
+          <div class="panel flex">
+            <img
+              src="assets/caret-double-down.svg"
+              alt="Scroll"
+              class="scroll-indicator"
+            />
           </div>
         </div>
       </section>
 
       <!-- PROJECTS -->
-
-      <section class="flex col" id="projects">
-        <div class="container flex col" id="my-works">
-          <h3 class="red-h">Meu trabalho</h3>
+      <section id="projects" class="flex col">
+        <div class="section-header site-container flex col">
+          <h3 class="accent-red">Meu trabalho</h3>
           <h2>Veja os projetos em destaque</h2>
         </div>
-        <div class="container flex" id="hub">
-          <div class="card flex col">
-            <div class="box flex">
-              <a class="projects-link" href="#" target="_blank"
-                ><img class="project-img" src="img/saturn-form.jpg"
-              /></a>
+
+        <div class="projects-grid site-container flex" aria-live="polite">
+          <article class="project-card">
+            <div class="panel flex">
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                <img
+                  class="project-image"
+                  src="img/saturn-form.jpg"
+                  alt="Saturn Form"
+                />
+              </a>
             </div>
-            <div class="card-info flex col">
-              <span class="title">Saturn Form</span>
+
+            <div class="project-info">
+              <span class="subtitle">Saturn Form</span>
               <p>Formulário de contato com design moderno e intuitivo</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!-- SERVICES -->
-
-      <section class="flex col" id="services">
-        <div class="container flex col" id="my-services">
-          <h3 class="red-h">Meu serviço</h3>
+      <section id="services" class="flex col">
+        <div class="section-header site-container flex col">
+          <h3 class="accent-red">Meu serviço</h3>
           <h2>Como posso ajudar o seu negócio</h2>
         </div>
-        <div class="container flex" id="features">
-          <div class="wrapper flex col">
-            <div class="services-icons box flex">
-              <img src="assets/devices-purple.svg" />
+
+        <div class="services-grid site-container flex">
+          <div class="service-card">
+            <div class="service-icon panel flex">
+              <img src="assets/devices-purple.svg" alt="" />
             </div>
-            <div class="services-text box flex col">
-              <span class="title">Websites e Aplicativos</span>
+            <div class="service-info panel flex col">
+              <span class="subtitle">Websites e Aplicativos</span>
               <p>Desenvolvimento de interfaces</p>
             </div>
           </div>
@@ -107,24 +120,33 @@
     </main>
 
     <!-- FOOTER -->
-
-    <footer>
-      <div class="container">
-        <h3 class="purple-h">Contato</h3>
+    <footer id="footer" class="flex col">
+      <div class="site-container flex col">
+        <h3 class="accent-purple">Contato</h3>
         <h2>Gostou do meu trabalho?</h2>
         <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
       </div>
-      <div class="container">
-        <ul>
+
+      <div class="site-container">
+        <ul id="social-links" class="flex col">
           <li>
-            <a class="social" href="#" target="_blank"
-              ><img src="assets/" alt="" />GitHub</a
+            <a
+              class="social"
+              href="https://github.com/eduardomseiras"
+              target="_blank"
+              rel="noopener"
             >
+              <img src="assets/github-logo.svg" />GitHub<img
+                src="assets/arrow-up-right.svg"
+              />
+            </a>
           </li>
           <li>
-            <a class="social" href="#" target="_blank"
-              ><img src="assets/envelope-simple.svg" />E-mail</a
-            >
+            <a class="social" href="#" target="_blank" rel="noopener">
+              <img src="assets/envelope-simple.svg" />E-mail<img
+                src="assets/arrow-up-right.svg"
+              />
+            </a>
           </li>
         </ul>
       </div>
