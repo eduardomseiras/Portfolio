@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="Projeto Saturn Form" src=".github/preview.png" width="100%">
+  <img alt="Meu Portfolio" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
